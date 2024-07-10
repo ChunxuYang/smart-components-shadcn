@@ -19,6 +19,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { useToast } from "@/components/ui/use-toast";
 import { zodResolver } from "@hookform/resolvers/zod";
 
+export const runtime = "edge";
+
 const FormSchema = z.object({
   first_name: z.string().min(1),
   last_name: z.string().min(1),

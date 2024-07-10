@@ -6,6 +6,8 @@ import { dezerialize, Zerialize } from "zodex";
 
 import { anthropic } from "@ai-sdk/anthropic";
 
+export const runtime = "edge";
+
 export async function smartFill(
   serialized_schema: Zerialize<z.ZodObject<any, any>>,
   text: string
